@@ -1,6 +1,6 @@
 import Apurvaps0
 
-runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\n4. The factorial of a number\n5. factoring of a number\n6. Tests whether a number is prime or not\nEnter the number: ")
+runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\n4. The factorial of a number\n5. factoring of a number\n6. Tests whether a number is prime or not\n7. Tests for a perfect number\n8. Tests is the sum of a number is also a factor\nEnter the number: ")
 
 
 #The Even or Odd function
@@ -62,7 +62,15 @@ if runner == '6':
 #Test case 3: testing border 2
 	print("Is 2 prime? {}".format(Apurvaps0.prime(2)))
 
-
+if runner == '7':
 #Test case 1: perfect number
+	print("Is 6 a perfect number? {}".format(Apurvaps0.perfect(6)))
 #Test case 2: non perfect number
+	print("Is 10 a perfect number? {}".format(Apurvaps0.perfect(10)))
+
+if runner == '8':
+#Test case 1: factorable number
+	print("Is the sum of the digits 12 a factor of 12? {}".format(Apurvaps0.sum_div(12)))
+#Test case 2: non factorable number
+	print("Is the sum of the digits 15 a factor of 15? {}".format(Apurvaps0.sum_div(15)))
 

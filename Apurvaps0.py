@@ -90,4 +90,30 @@ def prime(number):
  			count += 1
  	return True
  			
+def perfect(number):
+
+	"""This function checks if the argument is a perfect number"""
+	
+	factorTotal = 0 #keeps track of the factors
+	count = 1
+	while count != number:
+ 			if number % count == 0:
+ 				factorTotal += count
+ 			count += 1
+ 			
+	if factorTotal == number:
+		return True
+	else:
+		return False
+
+def sum_div(number):
+	'''checks if the sum of the digits of a number is a factor of the original number'''
+	total = sum_of_digits(number)
+	remainder = number % total
+	if remainder == 0:
+		return True
+	else:
+		return False
+	
+	
  			
