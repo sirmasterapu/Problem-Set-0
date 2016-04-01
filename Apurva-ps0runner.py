@@ -53,6 +53,8 @@ if runner == '5':
 	print("Is 3 a factor of 4? {}".format(Apurvaps0.factoring(4, 3)))
 #Test case 3: testing a given number and 0
 	print("Is 0 a factor of 4? {}".format(Apurvaps0.factoring(4, 0)))
+#Test case 4: The factors of 0
+	print("Is 4 a factor of 0? {}".format(Apurvaps0.factoring(0, 4)))
 	
 if runner == '6':
 #Test case 1: testing a prime number
