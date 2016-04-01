@@ -1,6 +1,6 @@
 import Apurvaps0
 
-runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\nEnter the number: ")
+runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\n4. The factorial of a number\n5. factoring of a number\n6. Tests whether a number is prime or not\nEnter the number: ")
 
 
 #The Even or Odd function
@@ -37,3 +37,32 @@ if runner == '3':
 	print("The sum of the digits of 1234 is {}".format(Apurvaps0.sum_of_digits(1234)))
 #Test case 2: testing 0 because why not
 	print("The sum of the digits of 0 is {}".format(Apurvaps0.sum_of_digits(0)))
+	
+if runner == '4':
+#Test case 1: testing a given number
+	print("The factorial of 7 is {}".format(Apurvaps0.factorial(7)))
+#Test case 2: testing 1
+	print("The factorial of 1 is {}".format(Apurvaps0.factorial(1)))
+#Test case 3: testing 0
+	print("The factorial of 0 is {}".format(Apurvaps0.factorial(0)))
+
+if runner == '5':
+#Test case 1: testing a given number and factor
+	print("Is 2 a factor of 4? {}".format(Apurvaps0.factoring(4, 2)))
+#Test case 2: testing a given number and a non factor
+	print("Is 3 a factor of 4? {}".format(Apurvaps0.factoring(4, 3)))
+#Test case 3: testing a given number and 0
+	print("Is 0 a factor of 4? {}".format(Apurvaps0.factoring(4, 0)))
+	
+if runner == '6':
+#Test case 1: testing a prime number
+	print("Is 23 prime? {}".format(Apurvaps0.prime(23)))
+#Test case 2: testing a non prime number
+	print("Is 15 prime? {}".format(Apurvaps0.prime(15)))
+#Test case 3: testing border 2
+	print("Is 2 prime? {}".format(Apurvaps0.prime(2)))
+
+
+#Test case 1: perfect number
+#Test case 2: non perfect number
+

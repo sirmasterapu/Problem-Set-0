@@ -55,3 +55,39 @@ def sum_of_digits(number):
 		
 	return sum
 
+def factorial(number):
+	'''Gets the factorial of a given number'''
+	factorial = 1
+	for item in range(1,number):
+		factorial *= item
+	
+	return factorial
+
+def factoring(number, factor):
+	'''Tells whether or not a the chosen number is a factor of the other number'''
+	if factor == 0:
+		return False
+		
+	else:	
+		remainder = number % factor
+		
+		if remainder > 0:
+			return False
+			
+		else:
+			return True
+
+def prime(number):
+	"""This function checks if the argument is prime"""
+	count = 2 #start count at 2 because 1 is a factor of every number
+	while count != number:
+ 		remainder = number % count 
+ 		
+ 		if remainder == 0:
+ 			return False
+ 			
+ 		else:
+ 			count += 1
+ 	return True
+ 			
+ 			
