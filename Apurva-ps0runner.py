@@ -1,6 +1,6 @@
 import Apurvaps0
 
-runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\n4. The factorial of a number\n5. factoring of a number\n6. Tests whether a number is prime or not\n7. Tests for a perfect number\n8. Tests is the sum of a number is also a factor\nEnter the number: ")
+runner = raw_input("What program would you like?\n0. Even or Odd\n1.Number of Digits\n2.Sum of lesser digits\n3.Sum of digits\n4. The factorial of a number\n5. factoring of a number\n6. Tests whether a number is prime or not\n7. Tests for a perfect number\n8. Tests if the sum of the digits of a number is also a factor\nEnter the number: ")
 
 
 #The Even or Odd function
