@@ -3,7 +3,7 @@ def odd_or_even(number):
 	'''Checks if Number is odd or even'''
 	evenodd = number % 2#A number divisible by two is even, so if their is no remainder it means two is a factor meaning its even
 	
-	if number > 0:
+	if evenodd > 0:
 		return False
 	
 	else:
@@ -58,7 +58,7 @@ def sum_of_digits(number):
 def factorial(number):
 	'''Gets the factorial of a given number'''
 	factorial = 1
-	for item in range(1,number):#Cant just be range(number) otherwise it would multiply by 0
+	for item in range(1,number + 1):#Cant just be range(number) otherwise it would multiply by 0
 		factorial *= item
 	
 	return factorial
